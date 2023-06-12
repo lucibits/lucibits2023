@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.07e4d6be.css",
-    "main.js": "/static/js/main.e9fbfb5c.js",
-    "static/media/avatar.png": "/static/media/avatar.6f7999bcf19040730688.png",
-    "static/media/schedule-04.jpg": "/static/media/schedule-04.afd7469416de29247cac.jpg",
-    "static/media/mb-02.jpg": "/static/media/mb-02.0a309cdf127623215bb4.jpg",
-    "static/media/mb-02.1.jpg": "/static/media/mb-02.1.b23a4a102321d673826f.jpg",
-    "static/media/pharmacy-portal-01.3.jpg": "/static/media/pharmacy-portal-01.3.55ae5c6ffc542b36e6f0.jpg",
-    "static/media/cyclescheme-01.2.jpg": "/static/media/cyclescheme-01.2.04ffeb622ed752ae7af2.jpg",
-    "static/media/pharmacy-portal-01.4.1.jpg": "/static/media/pharmacy-portal-01.4.1.8eb6ac7b869028daf7b1.jpg",
-    "static/media/uplifter-02.jpg": "/static/media/uplifter-02.c1337124baca6c6bc481.jpg",
-    "static/media/patient-portal-01.2.jpg": "/static/media/patient-portal-01.2.bfc9b99c0852386c5167.jpg",
-    "static/media/patient-portal-pathways-01.jpg": "/static/media/patient-portal-pathways-01.7b423d464bb1f6c9e09a.jpg",
-    "index.html": "/index.html",
-    "main.07e4d6be.css.map": "/static/css/main.07e4d6be.css.map",
-    "main.e9fbfb5c.js.map": "/static/js/main.e9fbfb5c.js.map"
+    "main.css": "/lucibits2023/static/css/main.07e4d6be.css",
+    "main.js": "/lucibits2023/static/js/main.30539a66.js",
+    "static/media/avatar.png": "/lucibits2023/static/media/avatar.6f7999bcf19040730688.png",
+    "static/media/schedule-04.jpg": "/lucibits2023/static/media/schedule-04.afd7469416de29247cac.jpg",
+    "static/media/mb-02.jpg": "/lucibits2023/static/media/mb-02.0a309cdf127623215bb4.jpg",
+    "static/media/mb-02.1.jpg": "/lucibits2023/static/media/mb-02.1.b23a4a102321d673826f.jpg",
+    "static/media/pharmacy-portal-01.3.jpg": "/lucibits2023/static/media/pharmacy-portal-01.3.55ae5c6ffc542b36e6f0.jpg",
+    "static/media/cyclescheme-01.2.jpg": "/lucibits2023/static/media/cyclescheme-01.2.04ffeb622ed752ae7af2.jpg",
+    "static/media/pharmacy-portal-01.4.1.jpg": "/lucibits2023/static/media/pharmacy-portal-01.4.1.8eb6ac7b869028daf7b1.jpg",
+    "static/media/uplifter-02.jpg": "/lucibits2023/static/media/uplifter-02.c1337124baca6c6bc481.jpg",
+    "static/media/patient-portal-01.2.jpg": "/lucibits2023/static/media/patient-portal-01.2.bfc9b99c0852386c5167.jpg",
+    "static/media/patient-portal-pathways-01.jpg": "/lucibits2023/static/media/patient-portal-pathways-01.7b423d464bb1f6c9e09a.jpg",
+    "index.html": "/lucibits2023/index.html",
+    "main.07e4d6be.css.map": "/lucibits2023/static/css/main.07e4d6be.css.map",
+    "main.30539a66.js.map": "/lucibits2023/static/js/main.30539a66.js.map"
   },
   "entrypoints": [
     "static/css/main.07e4d6be.css",
-    "static/js/main.e9fbfb5c.js"
+    "static/js/main.30539a66.js"
   ]
 }
