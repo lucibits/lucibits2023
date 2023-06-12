@@ -2,7 +2,7 @@
   "name": "revamp-2023",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lucibits.github.io/",
+  "homepage": "http://lucibits.github.io",
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
     "@testing-library/jest-dom": "^5.16.5",
