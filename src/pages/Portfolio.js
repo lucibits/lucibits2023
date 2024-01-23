@@ -30,9 +30,9 @@ const Card = (props) => {
                     transition={{
                         duration: 0.75, delay: 0.15
                     }}
-                    className='rounded-lg hover:shadow-xl transition-all'>
+                    className='rounded-3xl hover:shadow-xl transition-all'>
                     <img 
-                    className='rounded-lg w-full object-cover h-64 self-center'
+                    className='rounded-3xl w-full object-cover h-64 self-center'
                     src={props.thumb} alt={props.alt}/>
                 </motion.div>
                 <motion.div
@@ -46,7 +46,7 @@ const Card = (props) => {
                         duration: 0.35, delay: 0.15
                     }} 
                     className='p-4'>
-                    <h1 className='text-2xl font-bold text-indigo-500'>{props.title}</h1>
+                    <h1 className='text-2xl font-bold text-indigo-500 dark:text-indigo-300'>{props.title}</h1>
                     <p>{props.description}</p>
                 </motion.div>
             </Link>
@@ -65,6 +65,13 @@ const Portfolio = () => {
     let ThumbUplifter = require("../assets/uplifter-02.jpg" )
 
      const projects = [
+        {
+            title: "Product design system",
+            description: "Meddbase B2B software design",
+            thumb: ThumbMb,
+            path: '/mb-design-system',
+            component: 'MBDesignSystem'
+        },
         {
             title: "Medication delivery portal",
             description: "E-prescription dispensing app",
@@ -87,13 +94,6 @@ const Portfolio = () => {
             component: 'Schedules'
         },
         {
-            title: "Product design system",
-            description: "Meddbase B2B software design",
-            thumb: ThumbMb,
-            path: '/mb-design-system',
-            component: 'MBDesignSystem'
-        },
-        {
             title: "Cyclescheme funnel",
             description: "Certificate and code redemption",
             thumb: ThumbCycleScheme,
@@ -110,7 +110,11 @@ const Portfolio = () => {
     ]
 
     return (
+
         <section className='pb-12 pt-8 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
+            <div className='text-center'>
+                <p className='text-lg pb-12 text-slate-600 dark:text-slate-300'>This preview only includes the latest work. Want to see more? <Link to="/contact"><span className='underline decoration-indigo-500 font-bold'>Let's chat</span></Link>. </p>                    
+            </div>
             <div 
                 className='flex px-4 flex-wrap gap-4 md:px-32'>
                 {projects.map((project) => (
@@ -122,10 +126,7 @@ const Portfolio = () => {
                                 alt={project.title}/>
                     
                 ))}
-            </div> 
-            <div className='text-center'>
-                <p className='text-sm pb-4 pt-12 text-slate-500'>There is more work to come, for now, you can see a selection of the latests I have worked on.</p>                    
-            </div>
+            </div>       
         </section>
     )
 }

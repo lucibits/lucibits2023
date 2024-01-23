@@ -16,7 +16,7 @@ import * as Unicons from '@iconscout/react-unicons';
 
 function App() {
 
-  let Logo = require('../src/assets/avatar.png');
+  let Logo = require('../src/assets/1080x1080-thumb-big-face-accent-indigo-bg.png');
 
   const [darkMode, setDarkMode] = useState(false)
   const [toggle, setToggle] = useState(false)
@@ -27,7 +27,7 @@ function App() {
   }
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <main className={darkMode ? "dark" : ""}>
       <nav className='flex justify-between items-center bg-white/90 dark:bg-slate-900 dark:text-slate-300 py-4 px-4 md:px-32 text-slate-700 w-full sticky top-0 transition-colors duration-400'>
             <div className='flex items-center'>
                 <Link to="/">
@@ -37,12 +37,12 @@ function App() {
             <ul className='flex font-semibold'>  
                 
                 <li className='px-3 hover:transition-all hover:bg-indigo-100 hover:text-indigo-500 rounded-full'>
-                  <NavLink to="/portfolio" >Portfolio</NavLink>
+                  <NavLink to="/portfolio" >Work</NavLink>
                 </li>
                 
-                <li className='px-2 hover:transition-all hover:bg-indigo-100 hover:text-indigo-500 rounded-full'>
+                {/* <li className='px-2 hover:transition-all hover:bg-indigo-100 hover:text-indigo-500 rounded-full'>
                   <NavLink to="/blog">Blog</NavLink>
-                </li>
+                </li> */}
 
                 <li className='px-2 hover:transition-all hover:bg-indigo-100 hover:text-indigo-500 rounded-full'>
                   <NavLink to="/contact">Say hi!</NavLink>
@@ -89,13 +89,11 @@ function App() {
           <a href='https://github.com/lucibits' target='_blank'>
             <Unicons.UilGithub className="mx-1" id="social"/>
           </a>
-          <a href=''>
-            <Unicons.UilInstagram className="mx-1" id="social"/>
-          </a>
+          
           </div>
       </footer>
 
-    </div>
+    </main>
   );
 }
 

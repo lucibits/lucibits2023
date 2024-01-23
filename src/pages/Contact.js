@@ -42,12 +42,12 @@ const Contact = () => {
                         duration: 0.5, delay: 0.25
                     }}
                     className='leading-8'>
-                    I'm Lucy, I create digital products and I am based in London. <br />
-                    I am currently getting into writting my own articles and experience with 
-                    front-end development and design systems. <br />
+                    I'm Lucy, I create digital products and I am based in London. <br /><br />
+                    As I have enjoyed mentoring in my past roles, I am in the process of planning and gathering my notes in design and development to transform them into my articles and experience with 
+                    front-end development and design systems. <br /><br />
                     
-                    When I'm not at work I like to practice piano, play video and board games(currently part of a weekly gathering). 
-                    And when I'm not at my computer I like going on long walks and bike trips along the Thames Path. 
+                    After work, I like to play video games, participate in weekly gatherings playing board games and socialising, and read a monthly selection of books for both pleasure and personal development. 
+                    And when I'm not at home I enjoy going on long walks and bike trips along the Thames Path. 
                     
                 </motion.p>
                 <br />
@@ -62,7 +62,7 @@ const Contact = () => {
                         duration: 0.5, delay: 0.35
                     }}
                     >Reach out if you'd like to connect or have any query! 
-                    <a href="mailto:info@mailgo.dev" className='font-bold'> <span className='underline decoration-indigo-500 font-bold'>heylucibits@gmail.com</span></a>
+                    <a href="mailto:info@mailgo.dev" className='font-bold'> <span className='underline decoration-indigo-500 font-bold'>lucivfr@gmail.com</span></a>
                 </motion.p>
             </div>
         </section>
