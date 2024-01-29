@@ -111,7 +111,7 @@ const Portfolio = () => {
 
     return (
 
-        <section className='pb-12 pt-8 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
+        <section className='portfolio pb-12 pt-8 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
             <div className='text-center'>
                 <p className='text-lg pb-12 text-slate-600 dark:text-slate-300'>This preview only includes the latest work. Want to see more? <Link to="/contact"><span className='underline decoration-indigo-500 font-bold'>Let's chat</span></Link>. </p>                    
             </div>
