@@ -10,13 +10,13 @@ import MBDesignSystem from './pages/projects/MBDesignSystem';
 import Uplifter from './pages/projects/Uplifter';
 import Cyclescheme from './pages/projects/Cyclescheme';
 import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import About from './pages/About';
 import * as Unicons from '@iconscout/react-unicons';
 
 
 function App() {
 
-  let Logo = require('../src/assets/1080x1080-thumb-big-face-accent-indigo-bg.png');
+  let Logo = require('../src/assets/LF-photo.jpeg');
 
   const [darkMode, setDarkMode] = useState(false)
   const [toggle, setToggle] = useState(false)
@@ -28,7 +28,8 @@ function App() {
 
   return (
     <main className={darkMode ? "dark" : ""}>
-      <nav className='flex justify-between items-center bg-white/90 dark:bg-slate-900 dark:text-slate-300 py-4 px-4 md:px-32 text-slate-700 w-full sticky top-0 transition-colors duration-400'>
+      <nav className='flex justify-between items-center bg-white/90 dark:bg-slate-900 dark:text-slate-300 py-4 px-4 lg:px-36 text-slate-700 w-full sticky top-0 transition-colors duration-400'>
+
             <div className='flex items-center'>
                 <Link to="/">
                     <img src={Logo} alt="lucibits" className='rounded-full w-16'></img>
@@ -36,16 +37,16 @@ function App() {
             </div>
             <ul className='flex font-semibold'>  
                 
-                <li className='px-3 hover:transition-all hover:bg-indigo-100 hover:text-indigo-500 rounded-full'>
-                  <NavLink to="/portfolio" >Work</NavLink>
-                </li>
+                {/* <li className='px-3 hover:transition-all hover:bg-indigo-100 hover:text-indigo-500 rounded-full'>
+                  <NavLink to="/portfolio" >WORK</NavLink>
+                </li> */}
                 
                 {/* <li className='px-2 hover:transition-all hover:bg-indigo-100 hover:text-indigo-500 rounded-full'>
                   <NavLink to="/blog">Blog</NavLink>
                 </li> */}
 
-                <li className='px-2 hover:transition-all hover:bg-indigo-100 hover:text-indigo-500 rounded-full'>
-                  <NavLink to="/contact">Say hi!</NavLink>
+                <li className='px-2 hover:transition-all text-indigo-500 hover:text-[#FF6057] hover:italic rounded-full'>
+                  <NavLink to="/about">ABOUT</NavLink>
                 </li>
 
                 {
@@ -77,21 +78,8 @@ function App() {
         <Route path="/cyclescheme" element={<Cyclescheme />}/>
         <Route path="/uplifter" element={<Uplifter />}/>
         <Route path="/blog" element={<Blog />}/>
-        <Route path="/contact" element={<Contact />}/>
+        <Route path="/about" element={<About />}/>
       </Routes>
-
-      <footer className='flex justify-between text-slate-800 px-4 py-12 md:px-32 items-center dark:bg-slate-900 dark:text-slate-300'>
-          Made by lucibits &copy; 2023
-          <div className='flex px-2'>
-          <a href="https://www.linkedin.com/in/lucyvfr/" target='_blank'>
-            <Unicons.UilLinkedin className="mx-1" id="social"/>
-          </a>
-          <a href='https://github.com/lucibits' target='_blank'>
-            <Unicons.UilGithub className="mx-1" id="social"/>
-          </a>
-          
-          </div>
-      </footer>
 
     </main>
   );

@@ -1,6 +1,7 @@
 import React from 'react-dom'
 import {useEffect, useRef} from 'react'
 import {motion, useInView, useAnimation} from "framer-motion"
+import { Link } from 'react-router-dom'
 
 const MBDesignSystem = () => {
     const ref = useRef(null)
@@ -27,7 +28,7 @@ const MBDesignSystem = () => {
                         duration: 0.5, delay: 0.10
                     }}
                     className='pt-6 md:px-44'>
-                    <h1 className='text-3xl text-indigo-500 font-bold py-2'>Design system</h1>
+                    <h1 className='text-3xl text-indigo-500 font-mono font-bold py-2'>Design system</h1>
                 </motion.div>
 
                 <motion.div 
@@ -41,8 +42,9 @@ const MBDesignSystem = () => {
                         duration: 0.5, delay: 0.25
                     }}
                     className='pb-6 md:px-44'>
-                    <p className='text-lg py-2'>I worked as a UI/UX developer on a modern take for the main software.</p>
-                    <p className='text-lg text-indigo-700 dark:text-slate-300'>Designed in Figma and styled in Css.</p>
+                    <p className='text-lg py-2'>Responsible for the creation of a Design System for the Medical Management Systems main platform</p>
+                    <p className='mt-4 text-lg font-mono dark:text-slate-300'><strong className='text-[#FF6057]'>#</strong> Figma components, Designed system, Sass. </p>
+
                 </motion.div>
 
                 <motion.div 
@@ -60,19 +62,21 @@ const MBDesignSystem = () => {
                                 alt="Project" 
                                 className=' w-full object-cover rounded-md'
                                 />
-                    <p className='text-sm py-2 text-slate-500'>There is only so much visuals and source code I can share as the nature of this project being confidential, not published yet or launched yet, therefore, I have provided a brief description of my journey and the work I've done.</p>                    
+                    <p className='text-lg py-2 text-slate-600'>More about this on request as this project falls under NDA.  
+                        <Link to="/about" className='underline decoration-indigo-500 font-bold ml-2'>Let's talk.</Link>
+                    </p>                    
 
                 </motion.div>
                 <div className='py-6 md:px-44'>
-                    <h1 className='text-3xl font-bold py-2'>About the software</h1>
-                    <p className='text-lg py-2'>Meddbase is a B2B software that includes a full suite of healthcare management with features covering consultations, cross-organisation scheduling, patient analysis, document management, electronic referrals, pathology and reporting. The system also offers a user-friendly patient portal, automated email and SMS appointment reminders, and a built-in telemedicine platform with mobile app.</p>
-                    
+                    <h1 className='text-2xl font-bold py-2 font-mono'>My involvement in the company</h1>
+                    <p className='text-lg py-2'>I made sure that part of my work included anticipating the needs of other teams. For instance, I mentored a Graphic Designer from the Marketing team on the basics of Wordpress and conducted mentoring sessions on basic CSS knowledge for subsequent website adjustments. Additionally, I provided guidance to a few QA testers, Solution Engineers and Back-end developers on CSS and styling.
+                    I took charge of creating a centralized Confluence 'How-to' guide, providing comprehensive instructions to enhance time management and foster team independence. This initiative aimed to reduce reliance on individual support and empower team members to troubleshoot and resolve issues autonomously.</p>
+                    <p className='text-lg py-2'>I also actively participated as a team member in the MeddLife culture club, where I contributed by providing fun assets for company sweepstakes and other corporate competitions and games.</p>
                 </div>
 
                 <div className='py-6 md:px-44'>
-                    <h1 className='text-3xl font-bold py-2'>My involvement in the company</h1>
-                    <p className='text-lg py-2'>I made sure that part of my work included anticipating the needs of other teams, in this case I mentored a Graphic designer from the Marketing team on the gists of Wordpress and had mentoring sessions of basic CSS knowledge for consequent website adjustments. As well as a few QA testers and Back-end developers on CSS and styling.</p>
-                    <p className='text-lg py-2'>I also participated as a team in the MeddLife culture club, providing fun assets for company sweepstakes and other corporate competition and games.</p>
+                    <h1 className='text-2xl font-bold py-2 font-mono'>About the software</h1>
+                    <p className='text-lg py-2'>Meddbase is a Saas platform that includes a full suite of healthcare management with features covering consultations, cross-organisation scheduling, patient analysis, document management, electronic referrals, pathology and reporting. The system also offers a user-friendly patient portal, automated email and SMS appointment reminders, and a built-in telemedicine platform with mobile app.</p>
                 </div>
 
         </section>

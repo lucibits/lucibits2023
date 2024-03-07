@@ -39,7 +39,7 @@ const Hero = () => {
                 </div>  
 
                 {/* text column */}
-                <div className='w-full md:w-1/2 py-4 px-4 md:px-8'>
+                {/* <div className='w-full md:w-1/2 py-4 px-4 md:px-8'>
                     <div>
                         <h1 className='text-xl font-medium text-indigo-700'>My work consist on a range of unique products designed and developed with both users and stakeholders in mind.</h1>
                     </div>
@@ -50,7 +50,7 @@ const Hero = () => {
                             <Unicons.UilArrowRight className="mx-1"/>
                         </button>
                     </Link>
-                </div> 
+                </div>  */}
 
             </motion.div>
 
