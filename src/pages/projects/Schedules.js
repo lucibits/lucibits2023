@@ -16,7 +16,7 @@ const Schedules = () => {
     }, [isInView])
 
     return (
-        <section className='pt-4 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
+        <section className='bg-[#F4F4F4] pt-4 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
                 <motion.div 
                     variants={{
                         hidden: {opacity:0, y: 75},

@@ -28,7 +28,7 @@ function App() {
 
   return (
     <main className={darkMode ? "dark" : ""}>
-      <nav className='flex justify-between items-center bg-white/90 dark:bg-slate-900 dark:text-slate-300 py-4 px-4 lg:px-36 text-slate-700 w-full sticky top-0 transition-colors duration-400'>
+      <nav className='flex justify-between items-center bg-[#F4F4F4]/95 dark:bg-slate-900 dark:text-slate-300 py-4 px-4 lg:px-36 text-slate-700 w-full sticky top-0 transition-colors duration-400 border-b-[1px] dark:border-indigo-900'>
 
             <div className='flex items-center'>
                 <Link to="/">

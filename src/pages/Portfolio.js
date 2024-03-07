@@ -30,9 +30,10 @@ const Card = (props) => {
                     transition={{
                         duration: 0.75, delay: 0.15
                     }}
-                    className='rounded-lg shadow-xl hover:shadow-2xl transition-all'>
+                    className='rounded-lg shadow-md hover:shadow-2xl transition-all'>
                     <img 
-                    className='rounded-md w-full object-cover h-64 bg-indigo-400'
+                    className='rounded-md w-full object-cover h-102 bg-indigo-400'
+                    // h-64
                     src={props.thumb} alt={props.alt}/>
                 </motion.div>
                 <motion.div
@@ -45,8 +46,8 @@ const Card = (props) => {
                     transition={{
                         duration: 0.35, delay: 0.15
                     }} 
-                    className='p-4'>
-                    <h1 className='text-2xl font-bold font-mono text-indigo-500 dark:text-indigo-300'>{props.title}</h1>
+                    className='pt-4 pb-8'>
+                    <h1 className='text-xl font-bold font-mono text-indigo-500 dark:text-indigo-300'>{props.title}</h1>
                     <p className=''>{props.description}</p>
                 </motion.div>
             </Link>
@@ -111,14 +112,14 @@ const Portfolio = () => {
 
     return (
 
-        <section className='portfolio h-full border-b-[1px] dark:bg-slate-900 dark:text-slate-300'>
-  
-            <p className='text-xl text-center font-bold tracking-[.5rem] font-mono pb-4 text-slate-700 dark:text-slate-300'>WORK</p>
-            <p className='text-xl text-center pb-16 animate-bounce'>&#8595;</p>
+        <section className='bg-[#F4F4F4] portfolio h-full dark:bg-slate-900 dark:text-slate-300'>
             
-            <div className='pt-16 pb-16 px-16 sm:px-32 md:px-32 lg:px-56'>
+            <p className='text-xl text-center font-bold tracking-[.5rem] font-mono pb-4 text-slate-700 dark:text-slate-300'>WORK</p>
+            {/* <p className='text-xl text-center pb-16 animate-bounce'>&#8595;</p> */}
+            
+            <div className='pt-16 pb-16 px-8 sm:px-48 lg:px-56'>
                 <div 
-                    className='grid gap-4 md:grid-cols-2 md:gap-16'>
+                    className='grid gap-4 xl:grid-cols-2 md:gap-16'>
                     {projects.map((project) => (
                         
                             <Card path={project.path} 

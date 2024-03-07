@@ -20,7 +20,7 @@ const About = () => {
 
     return (
    
-        <section className='h-full pt-4 sm:pt-16 pb-24 contact dark:bg-slate-900 dark:text-slate-300'>
+        <section className='bg-[#F4F4F4] h-full pt-4 sm:pt-16 pb-24 contact dark:bg-slate-900 dark:text-slate-300'>
             <div className='grid gap-16 text-2xl pb-12 pt-8 py-4 px-8 md:px-16 lg:px-48'>
 
             <div>
@@ -92,7 +92,7 @@ const About = () => {
                     <br/>
                 </div>
 
-                <div className='bg-[#F6EAD7] rounded-2xl'>
+                <div className='bg-indigo-200 rounded-2xl'>
                     <motion.p 
                         variants={{
                             hidden: {opacity:0, y: 75},
