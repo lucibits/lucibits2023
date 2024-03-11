@@ -2,6 +2,7 @@ import React from 'react-dom'
 import {useEffect, useRef} from 'react'
 import {motion, useInView, useAnimation} from "framer-motion"
 import { Link } from 'react-router-dom'
+import Footer from '../Footer'
 
 const MedicationDelivery = () => {
     const ref = useRef(null)
@@ -16,7 +17,8 @@ const MedicationDelivery = () => {
     }, [isInView])
 
     return (
-        <section className='bg-[#F4F4F4] py-4 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
+        <section> 
+            <div className='py-4 md:py-16 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-[#033F2E] dark:text-slate-300 dark:border-0'>
                 <motion.div 
                     variants={{
                         hidden: {opacity:0, y: 75},
@@ -28,7 +30,7 @@ const MedicationDelivery = () => {
                         duration: 0.5, delay: 0.10
                     }}
                     className='pt-6 md:px-44'>
-                    <h1 className='text-3xl text-indigo-500 font-mono font-bold py-2'>Medication Delivery Portal</h1>
+                    <h1 className='text-4xl font-serif py-2'>Prescription Delivery Service</h1>
                 </motion.div>
                 <motion.div 
                     variants={{
@@ -61,9 +63,9 @@ const MedicationDelivery = () => {
                                 alt="Project" 
                                 className=' w-full object-cover rounded-md'
                                 />
-                    <p className='text-lg py-2 text-slate-600'>More about this on request as this project falls under NDA.  
+                    <p className='text-base py-2 text-slate-700 dark:text-slate-300'>🔒 More on request.  
                         <Link to="/about" className='underline decoration-indigo-500 font-bold ml-2'>Let's talk.</Link>
-                    </p>                    
+                    </p>                   
 
                 </motion.div>
 
@@ -85,11 +87,12 @@ const MedicationDelivery = () => {
                 </div>
 
                 <div className='py-6 md:px-44'>
-                    <h1 className='text-2xl font-bold font-mono py-2'>Conclusion</h1>
+                    <h1 className='text-2xl font-bold font-mono py-2'>Thoughts</h1>
                     <p className='text-lg py-2'>I found working on this product to be incredibly rewarding. It allowed me to fully immerse myself in various aspects of the design, development, and product management process.</p>                    
 
                 </div>
-
+                </div>
+                <Footer />
         </section>
     )
 }

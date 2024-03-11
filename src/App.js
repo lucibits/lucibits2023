@@ -28,7 +28,10 @@ function App() {
 
   return (
     <main className={darkMode ? "dark" : ""}>
-      <nav className='flex justify-between items-center bg-[#F4F4F4]/95 dark:bg-slate-900 dark:text-slate-300 py-4 px-4 lg:px-36 text-slate-700 w-full sticky top-0 transition-colors duration-400 border-b-[1px] dark:border-indigo-900'>
+    {/* 111A23
+    11101d 
+    033F2E */}
+      <nav className='flex justify-between items-center bg-[white]/95 dark:bg-[#033F2E] dark:text-slate-300 py-4 px-4 lg:px-36 text-slate-700 w-full sticky top-0 transition-colors duration-400 border-b-[1px] dark:border-green-950'>
 
             <div className='flex items-center'>
                 <Link to="/">
@@ -45,8 +48,8 @@ function App() {
                   <NavLink to="/blog">Blog</NavLink>
                 </li> */}
 
-                <li className='px-2 hover:transition-all text-indigo-500 hover:text-[#FF6057] hover:italic rounded-full'>
-                  <NavLink to="/about">ABOUT</NavLink>
+                <li className='px-4 text-[#212121] dark:text-indigo-300 hover:text-[#FF6057] hover:italic rounded-full transition-all'>
+                  <NavLink to="/about">About Me</NavLink>
                 </li>
 
                 {
@@ -54,13 +57,13 @@ function App() {
                 <li className='px-2 cursor-pointer'>
                   <Unicons.UilMoon 
                   onClick={handleToggle} 
-                  className="mx-1" 
-                  color="#6366f1"/>
+                  className="mx-1 p-1 bg-[#202020] hover:bg-[#FF6057] rounded-full transition-all" 
+                  color="#ffffff"/>
                 </li> :
                 <li className='px-2 cursor-pointer'>
                   <Unicons.UilSun
                   onClick={handleToggle} 
-                  className="mx-1" 
+                  className="mx-1 p-1 bg-white/20 hover:bg-blue-500 rounded-full transition-all" 
                   color="#fde047"/>
                 </li>
               }

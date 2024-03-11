@@ -2,6 +2,7 @@ import React from 'react-dom'
 import {useEffect, useRef} from 'react'
 import {motion, useInView, useAnimation} from "framer-motion"
 import { Link } from 'react-router-dom'
+import Footer from '../Footer'
 
 const Uplifter = () => {
     const ref = useRef(null)
@@ -16,7 +17,8 @@ const Uplifter = () => {
     }, [isInView])
 
     return (
-        <section className='bg-[#F4F4F4] pt-4 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
+        <section>
+            <div className='pt-4 md:py-16 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-[#033F2E] dark:text-slate-300 dark:border-0'>
 
                 <motion.div 
                     variants={{
@@ -29,7 +31,7 @@ const Uplifter = () => {
                         duration: 0.5, delay: 0.10
                     }}
                     className='pt-6 md:px-44'>
-                    <h1 className='text-3xl text-indigo-500 font-mono font-bold py-2'>Uplifter tool</h1>
+                    <h1 className='text-4xl font-serif py-2'>Uplifter AI-Powered Marketing Solutions for Business Growth</h1>
                 </motion.div>
                 <motion.div 
                     variants={{
@@ -62,12 +64,12 @@ const Uplifter = () => {
                                 alt="Project" 
                                 className=' w-full object-cover rounded-md'
                                 />
-                <p className='text-lg py-2 text-slate-600'>More about this on request as this project falls under NDA.  
+                <p className='text-base py-2 text-slate-700 dark:text-slate-300'>🔒 More on request.  
                         <Link to="/about" className='underline decoration-indigo-500 font-bold ml-2'>Let's talk.</Link>
                     </p>   
                 </motion.div>
                 <div className='py-6 md:px-44'>
-                    <h1 className='text-2xl font-bold font-mono py-2'>About the tool</h1>
+                    <h1 className='text-2xl font-bold font-mono py-2'>About the platform</h1>
                     <p className='text-lg py-2'>The Uplifter tool is an all-in-one marketing analytics platform to facilitate the creation of uniform UTMs URL parameters, find insights and crunch marketing data, making the campaign tracking more simple and efficient for agencies, analysts and marketers.</p>
                 </div>
 
@@ -80,10 +82,21 @@ const Uplifter = () => {
                 </div>
 
                 <div className='py-6 md:px-44'>
-                    <h1 className='text-2xl font-mono font-bold py-2'>Other involvement</h1>
+                    <h1 className='text-2xl font-mono font-bold py-2'>Other contributions</h1>
                     <p className='text-lg py-2'>Part of my work was to anticipate the needs of new team members, in this case I mentored an intern on UI/UX and the creation of assets in Adobe XD.</p>
-                    <p className='text-lg py-2'>I also participated as a team in Collision Canada, and Measure Camp Madrid.</p>
+                    <p className='text-lg py-2'>As a team, travelled to Toronto, Canada to participate in  
+                    <span>
+                        <a href='https://collisionconf.com/' target='_blank' className='underline decoration-indigo-500 font-bold ml-2'>Collision</a>
+                    </span>
+                    .
+                    I then travelled to Madrid, Spain to attend 
+                    <span>
+                        <a href='https://www.measurecamp.org/' target='_blank' className='underline decoration-indigo-500 font-bold ml-2'>Measure Camp</a>
+                    </span>
+                    .</p>
                 </div>
+                </div>
+                <Footer />
         </section>
     )
 }

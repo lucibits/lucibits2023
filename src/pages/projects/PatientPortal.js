@@ -2,6 +2,7 @@ import React from 'react-dom'
 import {useEffect, useRef} from 'react'
 import {motion, useInView, useAnimation} from "framer-motion"
 import { Link } from 'react-router-dom'
+import Footer from '../Footer'
 
 const PatientPortal = () => {
     const ref = useRef(null)
@@ -16,7 +17,8 @@ const PatientPortal = () => {
     }, [isInView])
 
     return (
-        <section className='bg-[#F4F4F4] py-4 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
+        <section>
+            <div className='py-4 md:py-16 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-[#033F2E] dark:text-slate-300 dark:border-0'>
                 <motion.div 
                     variants={{
                         hidden: {opacity:0, y: 75},
@@ -28,7 +30,7 @@ const PatientPortal = () => {
                         duration: 0.5, delay: 0.10
                     }}
                     className='pt-6 md:px-44'>
-                    <h1 className='text-3xl text-indigo-500 font-mono font-bold py-2'>Patient Portal</h1>
+                    <h1 className='text-4xl font-serif py-2'>Patient & Occupational health portals</h1>
                 </motion.div>
                 <motion.div 
                     variants={{
@@ -61,9 +63,9 @@ const PatientPortal = () => {
                                 alt="Project" 
                                 className=' w-full object-cover rounded-md'
                                 />
-                    <p className='text-lg py-2 text-slate-600'>More about this on request as this project falls under NDA.  
+                    <p className='text-base py-2 text-slate-700 dark:text-slate-300'>🔒 More on request.  
                         <Link to="/about" className='underline decoration-indigo-500 font-bold ml-2'>Let's talk.</Link>
-                    </p>                 
+                    </p>                
                     </motion.div>
                 <div className='py-6 md:px-44'>
                     <h1 className='text-2xl font-bold font-mono py-2'>Pathways integration</h1>
@@ -73,16 +75,20 @@ const PatientPortal = () => {
                                 alt="Project" 
                                 className=' w-full object-cover rounded-md'
                                 />
-                <p className='text-lg py-2 text-slate-600'>More about this on request as this project falls under NDA.  
+                <p className='text-base py-2 text-slate-700 dark:text-slate-300'>🔒 More on request.  
                         <Link to="/about" className='underline decoration-indigo-500 font-bold ml-2'>Let's talk.</Link>
                     </p>   
                 </div>
                 <div className='py-6 md:px-44'>
-                    <h1 className='text-2xl font-bold font-mono py-2'>My contributions</h1>
-                    <p className='text-lg py-2'>Among the challenges, I also worked on bug fixing and reducing code debt as well as to enhance the existing code and refactor it for customisations such as colour scheme, feature flags, required fields among other implementations. </p>
+                    <h1 className='text-2xl font-bold font-mono py-2'>Other contributions</h1>
+                    <p className='text-lg py-2'>I also worked on bug fixing and reducing code debt as well as to enhance the existing code and refactor it for customisations such as colour scheme, feature flags, required fields and other implementations for specific client requests. </p>
                     <p className='text-lg py-2'>This customisation allowed the operation teams to easily transform the portal to the clients needs without the need of the involvement of the development team.</p>
-                    <p className='text-lg py-2'>I also contributed to the knowledge base and How to articles (using Sharepoint) with tutorials for my teammates on these enhancements, making them more independent.</p>
+                    <p className='text-lg py-2'>I also contributed to the knowledge base and How to articles (using Sharepoint) with tutorials for my teammates on these enhancements, making them more independent. 
+                    <br/>
+                    <br/>Trained the Marketing team and Solutions Engineers for ongoing updates to the website and client portals.</p>
                 </div>
+                </div>
+                <Footer />
 
         </section>
     )

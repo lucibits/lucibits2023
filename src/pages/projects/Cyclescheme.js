@@ -2,6 +2,7 @@ import React from 'react-dom'
 import {useEffect, useRef} from 'react'
 import {motion, useInView, useAnimation} from "framer-motion"
 import { Link } from 'react-router-dom'
+import Footer from '../Footer'
 
 const Cyclescheme = () => {
     const ref = useRef(null)
@@ -16,8 +17,8 @@ const Cyclescheme = () => {
     }, [isInView])
 
     return (
-        <section className='bg-[#F4F4F4] py-4 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
-
+        <section>
+            <div className='py-4 md:py-16 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-[#033F2E] dark:text-slate-300 dark:border-0'>
                 <motion.div 
                     variants={{
                         hidden: {opacity:0, y: 75},
@@ -29,7 +30,7 @@ const Cyclescheme = () => {
                         duration: 0.5, delay: 0.10
                     }}
                     className='pt-6 md:px-44'>
-                    <h1 className='text-3xl text-indigo-500 font-mono font-bold py-2'>Cyclescheme purchase and code redemption scheme</h1>
+                    <h1 className='text-4xl font-serif py-2'>Cyclescheme platform</h1>
                 </motion.div>
                 <motion.div 
                     variants={{
@@ -42,7 +43,7 @@ const Cyclescheme = () => {
                         duration: 0.5, delay: 0.25
                     }}
                     className='pb-6 md:px-44'>
-                    <p className='text-lg py-2'>I worked as UI/UX developer on the purchase and code redemption funnel.</p>
+                    <p className='text-lg py-2'>My work involved the creation of user flows, wireframes and user journey working prototypes, front-end implementation of the Cyclescheme purchase and code redemption scheme funnel for both Cyclescheme B2C and B2B platforms.</p>
                     <p className='mt-4 text-lg font-mono dark:text-slate-300'><strong className='text-[#FF6057]'>#</strong> AngularJs, Bootstrap, Adobe XD. </p>
                 </motion.div>
 
@@ -61,7 +62,7 @@ const Cyclescheme = () => {
                                 alt="Project" 
                                 className=' w-full object-cover rounded-md'
                                 />
-                    <p className='text-lg py-2 text-slate-600'>More about this on request as this project falls under NDA.  
+                    <p className='text-base py-2 text-slate-700 dark:text-slate-300'>🔒 More on request.  
                         <Link to="/about" className='underline decoration-indigo-500 font-bold ml-2'>Let's talk.</Link>
                     </p>   
                 </motion.div>
@@ -71,6 +72,8 @@ const Cyclescheme = () => {
                     <p className='text-lg py-2'>The scheme has a complex funnel based on user and edge cases with integration for the main management software, the employer then can review the application and pay for the employee Cyclescheme package.</p>
                     <p className='text-lg py-2'>The system provides the generation of an e-certificate that you can exchange online or in-store.</p>
                 </div>
+            </div>
+            <Footer />
 
         </section>
     )

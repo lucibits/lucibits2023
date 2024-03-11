@@ -2,6 +2,7 @@ import React from 'react-dom'
 import {useEffect, useRef} from 'react'
 import {motion, useInView, useAnimation} from "framer-motion"
 import { Link } from 'react-router-dom'
+import Footer from '../Footer'
 
 const MBDesignSystem = () => {
     const ref = useRef(null)
@@ -16,7 +17,8 @@ const MBDesignSystem = () => {
     }, [isInView])
 
     return (
-        <section className='bg-[#F4F4F4] py-4 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-slate-900 dark:text-slate-300 dark:border-0'>
+        <section>
+            <div className='py-4 md:py-16 pb-10 px-4 md:px-32 border-b-[1px] dark:bg-[#033F2E] dark:text-slate-300 dark:border-0'>
                 <motion.div 
                     variants={{
                         hidden: {opacity:0, y: 75},
@@ -28,7 +30,7 @@ const MBDesignSystem = () => {
                         duration: 0.5, delay: 0.10
                     }}
                     className='pt-6 md:px-44'>
-                    <h1 className='text-3xl text-indigo-500 font-mono font-bold py-2'>Design system</h1>
+                    <h1 className='text-4xl font-serif py-2'>Healthcare SaaS platform - Design system</h1>
                 </motion.div>
 
                 <motion.div 
@@ -42,7 +44,7 @@ const MBDesignSystem = () => {
                         duration: 0.5, delay: 0.25
                     }}
                     className='pb-6 md:px-44'>
-                    <p className='text-lg py-2'>Responsible for the creation of a Design System for the Medical Management Systems main platform</p>
+                    <p className='text-lg py-2'>My work involved the creation of a Design System and Style Guides for the Meddbase main platform, website, newsletters and tools.</p>
                     <p className='mt-4 text-lg font-mono dark:text-slate-300'><strong className='text-[#FF6057]'>#</strong> Figma components, Designed system, Sass. </p>
 
                 </motion.div>
@@ -62,7 +64,7 @@ const MBDesignSystem = () => {
                                 alt="Project" 
                                 className=' w-full object-cover rounded-md'
                                 />
-                    <p className='text-lg py-2 text-slate-600'>More about this on request as this project falls under NDA.  
+                    <p className='text-base py-2 text-slate-700 dark:text-slate-300'>🔒 More on request.  
                         <Link to="/about" className='underline decoration-indigo-500 font-bold ml-2'>Let's talk.</Link>
                     </p>                    
 
@@ -78,6 +80,8 @@ const MBDesignSystem = () => {
                     <h1 className='text-2xl font-bold py-2 font-mono'>About the software</h1>
                     <p className='text-lg py-2'>Meddbase is a Saas platform that includes a full suite of healthcare management with features covering consultations, cross-organisation scheduling, patient analysis, document management, electronic referrals, pathology and reporting. The system also offers a user-friendly patient portal, automated email and SMS appointment reminders, and a built-in telemedicine platform with mobile app.</p>
                 </div>
+                </div>
+                <Footer />
 
         </section>
     )
